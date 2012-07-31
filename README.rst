@@ -3,10 +3,9 @@ Sites Debug Toolbar
 ===================
 
 The Sites Debug Toolbar is an add-on for Django Debug Toolbar for browsing
-``django.contrib.sites``. It's main intention is to debug projects using
-``django.contrib.sites`` to serve multiple sites. There are several apps
-which allows you to set SITE_ID dynamically according to current domain, like
-django-dynamicsites_. That app comes with helpful article_ to begin with.
+``django.contrib.sites`` monkey-patched by django-dynamicsites_. That app
+comes with helpful article_ to begin with. It sets SITE_ID dynamically
+according to domain.
 
 Installation and configuration
 ==============================
