@@ -13,7 +13,7 @@
 		{% for site in sites %}
 			<tr id="sitesMain_{{ forloop.counter }}" class="djDebugHoverable {% cycle 'djDebugOdd' 'djDebugEven' %}">
                 <td class="toggle">
-                    <a class="djToggleSwitch" data-toggle-name="sitesMain" data-toggle-id="{{ forloop.counter }}" data-toggle-open="+" data-toggle-close="-" href="javascript:void(0)">+</a>
+                    <a class="djToggleSwitch" data-toggle-name="sitesMain" data-toggle-id="{{ forloop.counter }}" data-toggle-open="+" data-toggle-close="-" href="javascript:void(0)">{% if site.id == current_site_id %}-{% else %}+{% endif %}</a>
                 </td>
 				<td>{{ site.id }}</td>
 				<td>{% if site.id == current_site_id %}***{% endif %}</td>
