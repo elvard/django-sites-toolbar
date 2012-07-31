@@ -8,7 +8,7 @@ from django.utils.translation import ugettext_lazy as _
 from debug_toolbar.panels import DebugPanel
 
 
-class SiteDebugPanel(DebugPanel):
+class SitesDebugPanel(DebugPanel):
     """
     Panel that displays informations about Sites
     """

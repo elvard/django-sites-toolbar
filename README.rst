@@ -21,7 +21,7 @@ Installation and configuration
 
 	DEBUG_TOOLBAR_PANELS = (
             ...
-	    'sites_toolbar.panels.memcache.SitesDebugPanel',
+	    'sites_toolbar.panels.SitesDebugPanel',
 	)
 
 .. _django-dynamicsites: https://bitbucket.org/uysrc/django-dynamicsites/src
